@@ -41,50 +41,6 @@ input[type=submit]
 }
 
 
-.loading {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: #000000;
-    z-index: 100000000;
-    transform-origin: bottom;
-    transition: 1.5s cubic-bezier(0.51, 0.03, 0.64, 0.28);
-    transition-delay: 0.5s;
-  }
-  
-  .loading.loaded {
-    transform: scaleY(0);
-    pointer-events: none;
-  }
-  
-  .loading > * {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: .5s ease;
-  }
-  
-  .loading.loaded > * { opacity: 0; }
-  
-  .loading .circle { animation: rotate360 1.5s linear infinite; }
-  
-  @keyframes rotate360 
-  {
-    0% { transform: translate(-50%, -50%) rotate(0); }
-    100% { transform: translate(-50%, -50%) rotate(1turn); }
-  }
-  
-
-  
-
-
-.bg-white {
-    background: #fff;
-}
-
 img {
     max-width: 100%;
 }
